@@ -24,9 +24,9 @@
             <!-- 头部区域（可配合layui 已有的水平导航） -->
             <ul class="layui-nav layui-layout-right">
                 <li class="layui-nav-item">
-                    <a href="javascript:;">
+                    <a href="javascript:;" class="user-info">
                         <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" class="layui-nav-img">
-                        <span class="text-avatar">X</span> 个人中心
+                        <span class="text-avatar">Q</span> 个人中心
                     </a>
                     <dl class="layui-nav-child">
                         <dd><a href="">基本资料</a></dd>
@@ -35,7 +35,7 @@
                     </dl>
                 </li>
                 <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
-                    <a href="javascript:;">
+                    <a href="javascript:;" id="btnLogout">
                         <i class="iconfont icon-tuichu"></i> 退出
                     </a>
                 </li>
@@ -47,8 +47,8 @@
                 <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
                 <div class="user-info">
                     <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" class="layui-nav-img" alt="" />
-                    <span class="text-avatar">X</span>
-
+                    <span class="text-avatar">Q</span>
+                    <span id="welcome">欢迎 ***</span>
                 </div>
                 <ul class="layui-nav layui-nav-tree" lay-shrink="all">
                     <li class="layui-nav-item layui-this">
@@ -88,6 +88,7 @@
 
     <script src="/assets/lib/layui/layui.all.js"></script>
     <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/js/baseAPI.js"></script>
     <script src="/assets/js/index.js"></script>
 
 </body>
