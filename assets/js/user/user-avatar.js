@@ -19,7 +19,6 @@ $(function() {
         })
         // 更换照片
     $('#files').on('change', function(e) {
-        console.log(e)
         var filelist = e.target.files;
         if (filelist.length === 0) {
             return layer.msg('请上传照片');
@@ -28,6 +27,7 @@ $(function() {
         var file = filelist[0];
         // 将文件转换为路径
         var imgUrl = URL.createObjectURL(file);
+        $('#image').attr('src', imgUrl)
         $image
             .cropper('destroy') // 销毁旧的裁剪区域
             .attr('src', imgUrl) // 重新设置图片路径
@@ -54,7 +54,7 @@ $(function() {
                 }
                 layer.msg(res.message);
 
-                window.parent.getUserInfo()
+                window.parent.getUserInfo();
             }
         })
     })

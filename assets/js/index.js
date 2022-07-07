@@ -23,7 +23,7 @@ $(function() {
         var name = user.nickname || user.username;
         $('#welcome').html('欢迎&nbsp&nbsp' + name)
         if (user.user_pic !== null) {
-            $('.layui-nav-img').attr('src', user.ser_pic)
+            $('.layui-nav-img').attr('src', user.user_pic)
             $('.text-avatar').hide();
             $('.layui-nav-img').show();
         } else {

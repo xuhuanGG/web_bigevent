@@ -42,11 +42,11 @@ $(function() {
             success: function(res) {
                 if (res.status !== 0) {
                     return '用户更新失败'
-                } else {
-                    layer.msg('信息修改成功');
-                    // 重新渲染首页
-                    // window.parent.getUserInfo();
                 }
+                layer.msg('信息修改成功');
+                // 重新渲染首页
+                window.parent.getUserInfo();
+
             }
 
         })
